@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+     <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>EconomEasy Energia</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME STYLE  -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE  -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+</head>
+
+<body>
+    <div class="navbar navbar-inverse set-radius-zero" >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home.php">
+
+                    <img src="assets/img/logo3.png" height="auto" width="100%"/>
+                </a>
+			 </div>
+			 
+<!--BOTOES SAIR E EDITAR DADOS-->
+            <div class="right-div">
+                <a href="deslogar.php" class="btn btn-danger pull-right">SAIR</a>
+				</div>
+				<div class="right-div">
+                <a href="deletar consumo.php" class="btn btn-danger pull-right">Deletar Consumo</a>
+				</div>
+				<div class="right-div">
+                <a href="coleta dados.php" class="btn btn-danger pull-right">Inserir Consumo</a>
+            
+            </div>
+			
+        </div>
+    </div>
+    <!-- CORPO-->
+    <section class="menu-section">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+					 <div class="left-div">
+	 <h4>Olá <?php echo $_SESSION['nome'];?><!--Colocar o nome de quem estiver logado-->
+	 </h4></div>
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a href="home.php" class="menu-top-active">HOME</a></li>
+                           
+                            
+                            <li>
+                                <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown">SERVIÇOS <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="consumo atual.php">CONSUMO ATUAL</a></li>
+                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="plano economia.php">PLANO DE ECONOMIA</a></li>
+									 <li role="presentation"><a role="menuitem" tabindex="-1" href="relatorio mensal.php">RELATORIO MENSAL</a></li>
+									 <li role="presentation"><a role="menuitem" tabindex="-1" href="dicas.php">DICAS</a></li>
+                                </ul>
+                            </li>
+							<li><a href="sobre.php">SOBRE NÓS</a></li>
+                            <li><a href="contato.php">FALE CONOSCO</a></li>
+                             <li><a href="informacoes extras.php">INFORMAÇÕES EXTRAS</a></li>
+                         
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+	
+	<!--SOBRE O PROJETO-->
+ 
+    <div class="content-wrapper">
+         <div class="container">
+        <div class="row pad-botm">
+            <div class="col-md-12">
+                <h3 class="header-line">DICAS</h3>
+				<br>
+				<h4>Confira aqui algumas dicas para ajudar você a economizar!</h4>
+				<br><br>
+ <h4><b>Dica#1</b></h4>
+<img src="assets/img/chuveiro.png" style="max-width:60%;height:auto"><br><br>
+<b>•Coloque a chave na posição verão para economizar até 30% da energia.<br>
+•Tome banhos de, no máximo, 10 minutos.</b><br><br>
+
+
+<h4><b>Dica#2</h4>
+<img src="assets/img/tomada.jpg" style="max-width:60%;height:auto"><br><br>
+•Evite usar extensões e benjamins, que desperdiçam energia.<br>
+•Tire da tomada os eletrônicos em "stand by". São os que ficam com uma luzinha acesa<br>
+mesmo quando desligados (microondas, laptop, DVD).<br><br></b>
+
+<h4><b>Dica#3</h4>
+<img src="assets/img/lampada.jpg" style="max-width:60%;height:auto"><br><br>
+•Prefira lâmpadas fluorescentes ou de LED. Uma fluorescente de 40 watts ilumina mais que<br>
+uma incandescente de 150 watts, e dura dez vezes mais.<br>
+•Evite apagar e acender a luz o tempo todo. O consumo maior das lâmpadas fluorescentes<br> 
+está no ato de acender.<br><br></b>
+
+
+<h4><b>Dica#4</h4>
+<img src="assets/img/geladeira.jpg" style="max-width:60%;height:auto"><br><br>
+•Cheque se a borracha da porta está boa. Faça o teste do papel: prenda uma folha na porta.<br> 
+Se, ao ser puxada, ela sair com facilidade, é sinal de que a borracha precisa ser trocada.<br>
+•Não seque roupas na grade traseira; o tecido também força mais o motor.<br><br></b>
+
+<h4><b>Dica#5</h4>
+<img src="assets/img/aquecedor solar.jpg" style="max-width:60%;height:auto"><br><br>
+•Experimente instalar um sistema solar de aquecimento de água para abastecer toda a casa.<br><br></b>
+
+<br>
+<b>Observação:</b> Se você desconfia que seu consumo é menor do que mostra a conta de luz, faça um teste para saber se há fuga de energia na sua casa. Apague todas as luzes e desligue todos os aparelhos elétricos. Após alguns minutos, o medidor de luz deve ficar parado. Se ele continuar girando, procure um eletricista. Problemas na fiação podem estar causando fuga de energia.<br><br> 
+
+
+Fonte: <a href="https://economia.uol.com.br/noticias/redacao/2015/07/16/a-alta-na-conta-de-luz-pesou-no-bolso-veja-dicas-para-economizar-energia.htm"> https://economia.uol.com.br/noticias/redacao/2015/07/16/a-alta-na-conta-de-luz-pesou-no-bolso-veja-dicas-para-economizar-energia.htm</a>
+       <a href="http://www.atitudessustentaveis.com.br/artigos/20-dicas-simples-para-economizar-energia-eletrica/">http://www.atitudessustentaveis.com.br/artigos/20-dicas-simples-para-economizar-energia-eletrica/</a>
+
+                
+                            </div>
+
+        </div>
+             
+            
+     <!-- CONTENT-WRAPPER SECTION END-->
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                  <center> &copy; 2017 economeasyenergia.com.br<a href="http://www.binarytheme.com/" target="_blank"  ></a> </center>
+                </div>
+
+            </div>
+        </div>
+    </section>
+      <!-- FOOTER SECTION END-->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/js/bootstrap.js"></script>
+      <!-- CUSTOM SCRIPTS  -->
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>EconomEasy Energia</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME STYLE  -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE  -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+</head>
+<body>
+<body>
+    <div class="navbar navbar-inverse set-radius-zero" >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home.php">
+
+                    <img src="assets/img/logo3.png" height="auto" width="100%"/>
+                </a>
+			 </div>
+			 
+<!--BOTOES SAIR E EDITAR DADOS-->
+            <div class="right-div">
+                <a href="deslogar.php" class="btn btn-danger pull-right">SAIR</a>
+				</div>
+				<div class="right-div">
+                <a href="deletar consumo.php" class="btn btn-danger pull-right">Deletar Consumo</a>
+				</div>
+				<div class="right-div">
+                 <a href="coleta dados.php" class="btn btn-danger pull-right">Inserir Consumo</a>
+            
+            </div>
+			
+        </div>
+    </div>
+    <!-- CORPO-->
+    <section class="menu-section">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+					 <div class="left-div">
+	 <h4>Olá <?php echo $_SESSION['nome'];?><!--Colocar o nome de quem estiver logado-->
+	 </h4></div>
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a href="home.php" class="menu-top-active">HOME</a></li>
+                           
+                            
+                            <li>
+                                <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown">SERVIÇOS <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="consumo atual.php">CONSUMO ATUAL</a></li>
+                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="plano economia.php">PLANO DE ECONOMIA</a></li>
+									 <li role="presentation"><a role="menuitem" tabindex="-1" href="relatorio mensal.php">RELATORIO MENSAL</a></li>
+									 <li role="presentation"><a role="menuitem" tabindex="-1" href="dicas.php">DICAS</a></li>
+                                </ul>
+                            </li>
+							<li><a href="sobre.php">SOBRE NÓS</a></li>
+                            <li><a href="contato.php">FALE CONOSCO</a></li>
+                             <li><a href="informacoes extras.php">INFORMAÇÕES EXTRAS</a></li>
+                         
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+	
+	<!--INFORMAÇÕES EXTRAS-->
+ 
+    <div class="content-wrapper">
+         <div class="container">
+        <div class="row pad-botm">
+            <div class="col-md-12">
+                <h3 class="header-line">INFORMAÇÕES EXTRAS</h3>
+				
+				 <h4><b>•Quer conhecer as taxas de cobrança da Cemig? <a href="https://www.cemig.com.br/pt-br/atendimento/Paginas/valores_de_tarifa_e_servicos.aspx">Clique aqui</a></h4></b><br><br>
+				
+				<h4><b>•Quanto custa colocar aquecedor solar em minha casa?</h4></b>
+				Os aquecedores possuem uma gama de vantagens dentre elas é a grande econômia de energia elétrica.<br>
+				Veja na tabela abaixo o custo médio do aquecedor solar.<br><br>
+				<img src="assets/img/aquecedor1.png" style="max-width:60%;height:auto"><br>
+				<img src="assets/img/aquecedor2.png" style="max-width:60%;height:auto"><br>
+				Obs: Para utilizar um aquecedor de 400 litros é necessário 2 placas coletoras, e se for de 600 litros serão necessárias 3 placas.
+				<h6><b>(Totas as informações foram fornecidas pela loja Império dos Tubos)</h6></b><br><br>
+				
+				<h4><b>•Qual a durabilidade das lâmpadas residenciais?</h4></b>
+				<img src="assets/img/tab lampadas.gif" style="max-width:50%;height:auto"><br>
+				<b><h6>Fonte:</b> <a href="https://inteligentesustentaveleeconomico.wordpress.com/2015/09/12/comparativo-dos-tipos-de-lampadas/">Is&Econômico</a><br><br></h6>
+				<br>
+				<br>
+				<h4><b>•Quanto custa uma lâmpada LED?</h4></b><br>
+				<img src="assets/img/led.jpg" style="max-width:50%;height:auto"><br>
+				<b><h6>Fonte:</b> <a href="http://www.forumdaconstrucao.com.br/conteudo.php?a=3&Cod=1423">Forúm da Construção</a></h6>
+				
+                
+                            </div>
+
+        </div>
+             
+            
+     <!-- CONTENT-WRAPPER SECTION END-->
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                  <center> &copy; 2017 economeasyenergia.com.br<a href="http://www.binarytheme.com/" target="_blank"  ></a> </center>
+                </div>
+
+            </div>
+        </div>
+    </section>
+      <!-- FOOTER SECTION END-->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/js/bootstrap.js"></script>
+      <!-- CUSTOM SCRIPTS  -->
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

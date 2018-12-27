@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>EconomEasy Energia</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME STYLE  -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE  -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+</head>
+<!--LOGO DO SOFTWARE DO CANTO ESQUERDO DA TELA-->
+<body>
+    <div class="navbar navbar-inverse set-radius-zero" >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home.php">
+
+                    <img src="assets/img/logo3.png" height="auto" width="100%"/>
+                </a>
+			 </div>
+			 
+<!--BOTOES SAIR E EDITAR DADOS-->
+            <div class="right-div">
+                <a href="deslogar.php" class="btn btn-danger pull-right">SAIR</a>
+				</div>
+				<div class="right-div">
+                <a href="deletar consumo.php" class="btn btn-danger pull-right">Deletar Consumo</a>
+				</div>
+				<div class="right-div">
+                <a href="coleta dados.php" class="btn btn-danger pull-right">Inserir Consumo</a>
+				</div>
+				
+			
+        </div>
+    </div>
+    <!-- CORPO-->
+    <section class="menu-section">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+					 <div class="left-div">
+	 <h4>Olá <?php echo $_SESSION['nome'];?> <!--Colocar o nome de quem estiver logado-->
+	 </h4></div>
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a href="home.php" class="menu-top-active">HOME</a></li>
+                           
+                            
+                            <li>
+                                <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown">SERVIÇOS <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="consumo atual.php">CONSUMO ATUAL</a></li>
+                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="plano economia.php">PLANO DE ECONOMIA</a></li>
+									 <li role="presentation"><a role="menuitem" tabindex="-1" href="relatorio mensal.php">RELATORIO MENSAL</a></li>
+									 <li role="presentation"><a role="menuitem" tabindex="-1" href="dicas.php">DICAS</a></li>
+                                </ul>
+                            </li>
+							<li><a href="sobre.php">SOBRE NÓS</a></li>
+                            <li><a href="contato.php">FALE CONOSCO</a></li>
+                             <li><a href="informacoes extras.php">INFORMAÇÕES EXTRAS</a></li>
+                         
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+	
+	
+                 
+     <!-- MENU SECTION END-->
+	 
+    <div class="content-wrapper">
+         <div class="container">
+        <div class="row pad-botm">
+            <div class="col-md-12">
+                <h3 class="header-line">SERVIÇOS</h3>
+                
+                            </div>
+
+        </div>
+             
+                <div class="row">
+                 <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="alert alert-info back-widget-set text-center">
+					  <button type="button" class="buttonhome">
+					  <a href="consumo atual.php" name="botaoconsumoatual">
+					  <img src="assets/img/consumo.png" style="width:70%" href="consumo atual.html">
+                            <h3>Consumo Atual </h3>
+                           Conheça seu consumo mensal
+						   </button>
+                        </div>
+                    </div>
+					
+              <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="alert alert-success back-widget-set text-center">
+					   <button type="button" class="buttonhome">
+					   <a href="plano economia.php" name="botaoplanoeconomia">
+					   <img src="assets/img/economia.png" style="width:70%" href="consumo atual.html">
+							 <h3>Plano de Economia</h3>
+                            Saiba como economizar
+                        </div>
+                    </div>
+					
+               <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="alert alert-warning back-widget-set text-center">
+					  <button type="button" class="buttonhome">
+							 <a href="relatorio mensal.php" name="botaorelatoriomensal">
+							 <img src="assets/img/relatorio.png" style="width:70%" href="consumo atual.html">
+                            <h3>Relatório Mensal</h3>
+                           Acompanhe seu consumo
+                        </div>
+                    </div>
+					
+               <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="alert alert-danger back-widget-set text-center">
+					  <button type="button" class="buttonhome">
+							<a href="dicas.php" name="botaodicas">
+							   <img src="assets/img/dicas.png" style="width:70%" href="consumo atual.html">
+                            <h3>Dicas</h3>
+                            Como economizar?
+                        </div>
+                    </div>
+
+        </div> 
+             
+                 <!--SLIDER-->
+				 
+<div class="row">
+
+             <center> <div class="col-md-8 col-sm-8 col-xs-12"> </center>
+                    <div id="carousel-example" class="carousel slide slide-bdr" data-ride="carousel" >
+                   
+                    <div class="carousel-inner">
+                        <div class="item active">
+
+                            <img src="assets/img/slide1.png" alt=""/> 
+                           
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/slide2.png" alt="" />
+                          
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/slide3.png" alt="" />
+                           
+                        </div>
+                    </div>
+                    <!--INDICATORS-->
+                     <ol class="carousel-indicators">
+                        <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example" data-slide-to="1" ></li>
+                        <li data-target="#carousel-example" data-slide-to="2" ></li>
+                    </ol>
+                    <!--PREVIUS-NEXT BUTTONS-->
+                     <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+                </div>
+              </div>
+             
+     <!-- CONTENT-WRAPPER SECTION END-->
+    <section class="col-md-12">
+        <div class="col-md-12">
+            <div class="col-md-12">
+                <div class="col-md-12">
+                  <center> </b>&copy; 2017 economeasyenergia.com.br<div class="center"></div><a href="http://www.binarytheme.com/" target="_blank"  ></a> </center>
+                </div>
+
+            </div>
+        </div>
+    </section>
+      <!-- FOOTER SECTION END-->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/js/bootstrap.js"></script>
+      <!-- CUSTOM SCRIPTS  -->
+    <script src="assets/js/custom.js"></script>
+  
+</body>
+</html>

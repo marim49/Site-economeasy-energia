@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8" language='pt-br'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EconomEasy Energia</title>
+ 
+	<!--Aqui começa meu stylo---->
+     <link rel="stylesheet" href="css/style.css">
+	<!--Aqui termina meu stylo-->
+	
+
+</head>
+
+
+<body>
+
+
+	<img class="logo" src="assets/img/logologin.png" alt="Logo" height="auto" width="40%">
+
+  <div class="login-page">
+  <div class="form">
+  <!--Formulario de Registro-->
+    <form class="register-form" name="registrar" action="registrar.php" onsubmit="return validar()" method="post" >
+      <input type="text" name="inserirnome" placeholder="Insira seu nome." maxlength="30"required="" autofocus pattern="[a-zA-z\s]+$"/>
+      <input type="password" name="inserirsenha"placeholder="Insira uma senha" required="" maxlength="10" />
+	  <input type="password" name="confirmarsenha"placeholder="Confirme sua senha" required="" maxlength="10"/>
+      <input type="email" name="inseriremail"placeholder=" Insira seu endereço de e-mail" required="" maxlength="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+	  <input type="email" name="confirmaremail"placeholder="Confirme seu endereço de e-mail" required="" maxlength="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+	  
+      <div id="mainselection" name="inserirconssecionaria">
+       <select required>
+        <option value=""> Selecione a concessionária de energia</option>
+        <option value="cemig" >Cemig</option>
+       </select>
+      </div>
+	   
+      <button>Cadastre</button>
+      <p class="message">Já é cadastrado? <a href="#" name="botaoentre">ENTRE</a></p>
+    </form>
+	<!--Pagina de login-->
+	
+    <form class="login-form" name="logar" action="logar.php" onsubmit="" method="post">
+      <input type="email" name="logaremail" placeholder="Digite seu Email" maxlength="40" autofocus pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+      <input type="password" name="logarsenha" placeholder="Digite sua senha"maxlength="10"/>
+      <button type="submit" name="entrar">Entre </button>
+      <p class="message">Ainda não é cadastrado? <a href="#" name="botaocadastrar">Cadastre-se</a></p>
+	  <p class="message">Esqueceu sua senha? <a href="esquecisenha.html">Clique aqui</a></p>
+    </form>
+  
+
+<!--Aqui começa meu script-->
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="js/index.js"></script>
+	<script type="text/javascript"src="js/scriptcadastro.js"></script>
+<!--Aqui termina meu script-->
+
+</body>
+</html>
